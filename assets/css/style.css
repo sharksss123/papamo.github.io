@@ -1,0 +1,194 @@
+:root {
+    --bg1: #0d0d0c;
+    --bg2: rgb(180, 53, 53);
+    --bg3: rgb(148, 154, 153);
+    --body: #d5e402;
+    --white: rgb(250, 246, 246);
+    --p: rgb(161, 150, 150);
+    --b: rgb(177, 183, 185);
+}
+
+body {
+    background-color: var(--bg1);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#banner {
+    background: url('../images/different-zero-waste-products-with-copy-space.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, hsla(0, 3%, 6%, 0.829), rgba(249, 244, 244, 0.884));
+}
+
+
+
+.navbar .nav-link:hover{
+    color: var(--bg3) !important;
+}
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--white);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+ }
+
+ #services{
+    background: var(--bg3);
+ }
+ #about{
+    background: var(--bg1);
+ }
+
+ #cta{
+    background-image: url('../images/different-zero-waste-products-with-copy-space.jpg');
+    position: relative;
+    opacity: 0.90;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 70vh;
+ }
+
+ .icon-box-img{
+    width: 40%;
+ }
+
+ .btn-outline-brand{
+    background-color: transparent;
+    color: var(--bg1);
+    border-color: var(--bg1);
+ }
+
+ .btn-outline-brand:hover {
+    background-color: var(--bg1);
+    color: var(--body);
+ }
+
+ .card {
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .p-3{
+    background-color: rgb(234, 234, 237);
+ }
+ .card:hover {
+    background-color: rgb(141, 149, 152);
+ }
+
+ .card:hover .card-title,
+ .card:hover .card-text,
+ .card:hover .btn {
+    color:rgb(246, 250, 246);
+ }
+
+ .testimonials {
+    background-color: var(--bg3);
+    padding: 30px;
+ }
+
+ .testimonials img{
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+ }
+
+ #reviews a {
+   color: var(--white);
+}
+
+.faq-section {
+   max-width: 800px;
+   margin: auto;
+}
+
+.accordion-item{
+   margin-bottom: 20px;
+   border-radius: 0;
+}
+
+#faq {
+   background-color: var(--b);
+}
+
+.accordion-button{
+   background-color: #fffcfc;
+   border: none;
+   border-bottom: 1px solid #fffcfc;
+   border-radius: 0;
+   padding: 15px;
+   font-size: 18px;
+   font-weight: 500;
+   color: #343a40;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+   border-left: 3px solid var(--bg2);
+   padding: 10px 15px;
+   margin-left: 0;
+   background-color: #f8f9fa;
+}
+
+.faq-answer p {
+   margin-bottom: 0;
+}
+
+.accordion-button:focus{
+   box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+   color: var(--bg1);
+}
+/* hover effect for FAQ queston  */
+.accordion-button:hover {
+   background-color: var(--b);
+   color: var(--);
+}
+
+/* adjust accordion icon*/
+.accordion-button::after {
+   font-family: "font awesome 5 free";
+   content: ""; /* plus icon */
+   float: right;
+   font-weight: 900;
+   margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+   content: ""; /* minus icon*/
+}
+@media screen and (max-width:767px){
+
+   section{
+      padding: 60px 20px;
+   }
+   .card{
+      margin-bottom: 20px;
+   }
+}
